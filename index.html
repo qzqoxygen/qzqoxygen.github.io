@@ -5,56 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>邱紫琦的个人主页</title>
     <style>
+        .container{
+            width: 800px;
+            margin: 0 auto; 
+            padding: 20px;
+            display: flex;
+        }
         .avatar{
             border-radius: 50%;
+            display: block;
         }
         .box1{
-            width: 400px;
+            width: 200px;
             height: auto;
             padding: 10px;
             margin: 15px;
             border-radius: 20px;
-            border: 3px solid rgb(76, 5, 130);
-            background-color: rgb(191, 188, 214);
+            font-size: 12px;
+            background-color: rgb(233, 240, 240);
         }
         .box1 .h{
-            color: blueviolet;
+            padding-left: 10px;
         }
-        .box1 .p1{
-            color: rgba(163, 247, 28, 0.756);
-            font-size: 15px;
-            font-weight: bold;
-            
-        }
-
         .box2{
             width: 400px;
             padding: 15px;
             margin: 15px;
             border-radius: 20px;
-            border: 3px solid rgb(60, 114, 23);
-            background-color: rgb(205, 239, 177);
+            background-color: rgb(211, 215, 215);
+        }
+        .box2 .h{
+            margin-bottom: 0px;
+        }
+        .box3{
+            display: flex;
+        }
+        .box4{
+            border-right: 1px solid black;
+            padding-right: 60px;
+        }
+        .box5{
+            margin: auto;
         }
     </style>
 </head>
 <body>
-    
-    <div class="box1">
-    <img src="头像.jpg" alt="图片" width="70" height="70" class="avatar">
-    <h3  class="h">邱紫琦(e-mail: 18660858960@163.com)</h3>
-    <p class="p1">专业：计算机科学与技术 </p>
-    </div>
-
-    <div class="box2">
-    <h2>个人爱好</h2>
-    <ul>
-        <h3>🥳热衷</h3>
-        <li>🧑‍💻编程</li>
-        <li>📚阅读</li>
-        <li>🎵音乐</li>
-        <li>🏃运动</li>
-        <li>🎮电子游戏</li>
-    </ul>
+    <div class="container">
+        <div class="box1">
+        <img src="头像.jpg" alt="图片" width="70" height="70" class="avatar">
+        <h2 class="h">邱紫琦</h2>
+        <p class="p1">
+            曲阜师范大学本科生，研究方向为深度学习与计算机视觉，聚焦复杂场景下的目标检测与图像分割。通过引入注意力机制与轻量化网络，致力于提升模型在实时处理图像时的速度与精度。<br>
+            <hr>
+            专业：计算机科学与技术<br>
+            日照，山东，中国<br>
+            曲阜师范大学<br>
+            e-mail: 18660858960@163.com
+        </p>
+        </div>
+        <div class="box2">
+            <h3>个人信息</h3>
+            <p>邱紫琦，女，曲阜师范大学在读本科生。研究兴趣主要集中在深度学习与计算机视觉领域，特别是目标检测与图像分割技术的应用。当前的研究工作聚焦于复杂场景下的目标识别，致力于通过引入注意力机制与轻量化网络结构，以增强模型在实时处理复杂图像时的检测速度与精度。</p>
+            <h3>教育经历</h3>
+            <p>目前就读于曲阜师范大学</p>
+            <hr>
+            <h4 class="h">个人爱好</h4>
+            <div class="box3">
+                <div class="box4"><h4>热衷</h4>
+                    <ul class="left">
+                        <li>📚阅读</li>
+                        <li>🎵音乐</li>
+                        <li>🏃运动</li>
+                    </ul>
+                </div>
+                <div class="box5"><h4>日常</h4>
+                    <ul class="right">
+                        <li>🧑‍💻编程</li>
+                        <li>🎮电子游戏</li>
+                        <li>📖学习</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
